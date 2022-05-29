@@ -1,0 +1,12 @@
+domains
+person=symbol
+predicates
+boy(person)
+father(person,person)
+bigger(person)
+clauses
+boy(ahmad).
+father(rashid,ahmad).
+father(amin,rashid).
+bigger(X):-
+father(Y,ahmad),father(X,Y).
