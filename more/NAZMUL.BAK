@@ -1,0 +1,6 @@
+domains
+   disease,indication=symbol
+predicates
+   symptom(disease,indication)
+clauses
+    symptom(chicken_pox,high_

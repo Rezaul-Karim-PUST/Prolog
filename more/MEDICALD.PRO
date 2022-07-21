@@ -1,0 +1,50 @@
+domains
+  disease,indication,name=symbol
+predicates
+  hypothesis(name,disease)
+  symptom(name,indication)
+
+clauses
+  symptom(charlie,fever).
+  symptom(charlie,rash).
+  symptom(charlie,headache).
+  symptom(charlie,runny_nose).
+  
+  hypothesis(patient,measles):-
+     symptom(patient,fever),
+     symptom(patient,cough),
+     symptom(patient,conjunctivities),
+     symptom(patient,runny_nose),
+     symptom(patient,rash).
+  hypothesis(patient,german_measles):-
+     symptom(patient,fever),
+     symptom(patient,headache),
+     symptom(patient,runny_nose),
+     symptom(patient,rash).
+  hypothesis(patient,flu):-
+     symptom(patient,fever),
+     symptom(patient,headache),
+     symptom(patient,body_ache),
+     symptom(patient,conjunctivitis),
+     symptom(patient,chills),
+     symptom(patient,sore_throat),
+     symptom(patient,cough),
+     symptom(patient,runny_nose).
+  hypothesis(patient,common_cold):-
+     symptom(patient,headache),
+     symptom(patient,sneezing),
+     symptom(patient,sore_throat),
+     symptom(patient,chills),
+     symptom(patient,runny_nose).
+  hypothesis(patient,mumps):-
+     symptom(patient,fever),
+     symptom(patient,swollen_glands).
+  hypothesis(patient,chicken_pox):-
+     symptom(patient,fever),
+     symptom(patient,rash),
+     symptom(patient,body_ache),
+     symptom(patient,chills).
+  hypothesis(patient,whooping_cough):-
+     symptom(patient,cough),
+     symptom(patient,sneezing),
+     symptom(patient,runny_nose).

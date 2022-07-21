@@ -1,12 +1,7 @@
 domains
-person=symbol
+person = symbol
 predicates
-boy(person)
-father(person,person)
-bigger(person)
+likes(person,person)
 clauses
-boy(ahmad).
-father(rashid,ahmad).
-father(amin,rashid).
-bigger(X):-
-father(rashid,ahmad),father(X,rashid).
+likes(bob,mary).
+likes(peter,sousie).
